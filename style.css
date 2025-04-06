@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+body {
+    background-color: white;
+    background-image: linear-gradient(to right, lightblue 1px, transparent 2px),
+                      linear-gradient(to bottom, lightblue 1px, transparent 2px);
+    background-size: 20px 20px; /* Adjust grid size here */
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    height: 100vh; /* Fit the container to the full screen height */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid lightblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Keep the header inside the container */
+}
+
+.page-header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    color: black;
+    overflow-wrap: break-word; /* Prevent text from overflowing */
+    word-wrap: break-word; /* Ensure compatibility with older browsers */
+    word-break: break-word; /* Break long words if necessary */
+}
+
+a {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+} 
+
+.container {
+    overflow-y: auto; /* Enable scrolling for overflowing content */
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
